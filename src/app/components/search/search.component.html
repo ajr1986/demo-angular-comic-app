@@ -1,0 +1,16 @@
+<h1>Buscando: <small>{{ phrase }}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el termino: {{ phrase }}
+    </div>
+  </div>
+</div>
+
+<div class="card-columns">
+
+  <app-card-heroe (selectedHeroe)="showHeroe(heroe.idx);" [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroes"></app-card-heroe>
+
+</div>
