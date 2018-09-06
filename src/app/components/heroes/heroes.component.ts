@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeroesComponent implements OnInit {
 
-  private heroes:Heroe[];
+  heroes:Heroe[];
 
   constructor( private heroesService:HeroesService,
                private router:Router) {

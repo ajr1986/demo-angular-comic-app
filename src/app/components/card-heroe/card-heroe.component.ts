@@ -9,7 +9,7 @@ import { Heroe } from '../../services/heroes.service';
 export class CardHeroeComponent implements OnInit {
 
   @Input()
-  heroe:Heroe[];
+  heroe:Heroe;
 
   @Input()
   index:number;
